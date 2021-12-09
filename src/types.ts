@@ -1,6 +1,9 @@
 /** @see {isCompany} ts-auto-guard:type-guard */
 export type Company = {
   companyName: string
+  //   companyAddress: string
+  companyOwner: string
+  paymentMethod: PaymentMethod
 }
 
 /** @see {isUser} ts-auto-guard:type-guard */
