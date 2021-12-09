@@ -10,11 +10,7 @@
     "lint:fix": "eslint src --ext js,ts,tsx --fix",
     "generate-guards": "ts-auto-guard --paths=./src/**/*.ts --paths=./src/*.ts && yarn lint:fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "concurrently yarn:generate-guards"
-    }
-  },
+  "pre-commit": "generate-guards",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dusty4848/example-ts-auto-guard.git"
@@ -35,6 +31,7 @@
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-prettier": "4.0.0",
     "husky": "7.0.4",
+    "pre-commit": "1.2.2",
     "prettier": "2.5.1",
     "ts-loader": "9.2.6",
     "typescript": "4.5.2",
