@@ -1,4 +1,4 @@
-import { Company, PaymentMethod, User } from './types'
+import { Company, User } from './types'
 
 export const getCustomers = (): (Company | User)[] => {
   return [
