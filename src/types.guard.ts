@@ -15,7 +15,8 @@ export function isCompany(obj: any, _argumentName?: string): obj is Company {
     ((obj !== null && typeof obj === 'object') || typeof obj === 'function') &&
     typeof obj.companyName === 'string' &&
     typeof obj.companyAddress === 'string' &&
-    typeof obj.companyOwner === 'string'
+    typeof obj.companyOwner === 'string' &&
+    (isPaymentMethod(obj.paymentMethod) as boolean)
   )
 }
 
